@@ -1,65 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NBA Fan Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <h1>Welcome to the NBA Fan Page</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About NBA</a></li>
-                <li><a href="#teams">Teams</a></li>
-                <li><a href="#legends">Legends</a></li>
-            </ul>
-        </nav>
-    </header>
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About the NBA</h2>
-        <p>
-            The National Basketball Association (NBA) is the premier professional basketball league in the world.
-            It was founded in 1946 and features 30 teams across the United States and Canada.
-        </p>
-    </section>
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <!-- Teams Section -->
-    <section id="teams">
-        <h2>Popular Teams</h2>
-        <ul>
-            <li>Los Angeles Lakers</li>
-            <li>Golden State Warriors</li>
-            <li>Chicago Bulls</li>
-            <li>Boston Celtics</li>
-            <li>Miami Heat</li>
-        </ul>
-    </section>
+/* Header */
+header {
+    background: #1d428a; /* NBA Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
-    <!-- Legends Section -->
-    <section id="legends">
-        <h2>NBA Legends</h2>
-        <div class="card">
-            <h3>Michael Jordan</h3>
-            <p>6-time NBA Champion with the Chicago Bulls.</p>
-        </div>
-        <div class="card">
-            <h3>Kobe Bryant</h3>
-            <p>5-time NBA Champion with the Los Angeles Lakers.</p>
-        </div>
-        <div class="card">
-            <h3>LeBron James</h3>
-            <p>4-time NBA Champion and still active today.</p>
-        </div>
-    </section>
+header h1 {
+    margin-bottom: 10px;
+}
 
-    <!-- Footer -->
-    <footer>
-        <p>NBA Fan Page © 2026</p>
-    </footer>
-</body>
-</html>
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    margin-bottom: 10px;
+    color: #1d428a;
+}
+
+/* NBA Image Styling */
+.nba-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+/* Cards for Legends */
+.card {
+    background: #eee;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #c8102e; /* NBA Red */
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1d428a;
+    color: white;
+    margin-top: 20px;
+}
